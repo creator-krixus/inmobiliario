@@ -1,5 +1,6 @@
 import React from 'react'
 import './SignUp.css'
+import logo from '../../images/logo.png'
 
 export default function SingUp() {
     return (
@@ -12,8 +13,8 @@ export default function SingUp() {
           <div class="row g-0">
             <div class="col-lg-6">
               <div class="card-body p-md-5 mx-md-4">
-              <img src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-login-form/lotus.png" style={{width:150}} alt="logo" />
-                  <h4 class="mt-1 mb-1 pb-1">We are The Lotus Team</h4>
+              <img src={logo} style={{width:90}} alt="logo" />
+                  <h4 class="mt-1 mb-1 pb-1">We are The Brexiu Team</h4>
 
                 <form>
                   <p>Registro de nuevo usuario</p>
