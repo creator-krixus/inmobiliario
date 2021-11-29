@@ -1,0 +1,26 @@
+.contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1%;
+}
+.testimonio{
+    margin-top: 80px;
+    position: relative;
+    width: 350px;
+    max-width: 100%;
+}
+.testi{
+    padding-top: 20%;
+    border-radius: 5%;
+    background-color: coral;
+    padding-bottom: 0.5%;
+}
+.imgCustomer{
+    position: absolute;
+    border-radius: 50%;
+    width: 50%;
+    top: -25%;
+    right: 23%;
+}
