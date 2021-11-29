@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< HEAD
 import About from '../about/About'
 export default function Home() {
     return (
@@ -41,6 +42,22 @@ export default function Home() {
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
+=======
+import CustomerExperience from '../customers/CustomerExperience'
+import Properties from '../properties/Properties'
+import Slider from '../slider/Slider'
+import Title from '../titulo/Title'
+
+
+export default function Home() {
+    return (
+      <div>
+          <Slider />
+          <Title title="Inmuebles BREXIU"/>
+          <Properties />
+          <Title title="Experiencias BREXIU" />
+          <CustomerExperience />
+>>>>>>> 4aa1a88aeec2670401ded74420df9d0df1e356fa
       </div>
       </div>
     )}

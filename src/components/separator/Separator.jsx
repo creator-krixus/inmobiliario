@@ -3,7 +3,7 @@ import './Separator.css'
 
 export default function Separator() {
     return (
-        <div class="separator">
+        <div className="separator">
         </div>
     )
 }
