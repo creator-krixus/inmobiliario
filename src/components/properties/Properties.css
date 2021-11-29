@@ -1,0 +1,10 @@
+.col{
+    position: relative;
+
+}
+.btn{
+    position: absolute;
+    top: 90%;
+    right: 40%;
+}
+
