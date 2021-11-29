@@ -1,7 +1,13 @@
 import React from 'react'
+// Se extrae la fecha actial y el año
+
 
 export default function Footer() {
+  const dia = new Date();
+  const year = dia.getFullYear();
+
     return (
+      
         <div>
 
 <footer class="text-center text-lg-start bg-dark text-muted">
@@ -119,9 +125,8 @@ export default function Footer() {
 
     </div>
   </section>
- 
-  <div class="text-center p-4" >
-    © 2021 Copyright:
+   <div class="text-center p-4" >
+    © {year} Copyright:
     <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
   </div>
 
