@@ -1,5 +1,9 @@
 import React from 'react'
 // Se extrae la fecha actial y el año
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faFacebookF, faGoogle, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faGem, faHome, faPhone, faPrint } from '@fortawesome/free-solid-svg-icons';
+
 
 
 export default function Footer() {
@@ -10,7 +14,7 @@ export default function Footer() {
       
         <div>
 
-<footer class="text-center text-lg-start bg-dark text-muted">
+<footer class="text-center text-lg-start bg-black text-muted">
 
   <section
     class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
@@ -20,28 +24,23 @@ export default function Footer() {
       <span>Conectate a nuestras redes sociales:</span>
     </div>
 
-
-
     <div>
       <a href="a" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
+        <FontAwesomeIcon icon={faFacebookF} />  
       </a>
       <a href="v" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
+        <FontAwesomeIcon icon={faTwitter} />
       </a>
       <a href="c" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
+      <FontAwesomeIcon icon={faGoogle} />
       </a>
       <a href="d" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
+      <FontAwesomeIcon icon={faInstagram} />
       </a>
       <a href="e" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
+      <FontAwesomeIcon icon={faLinkedin} />
       </a>
-      <a href="a" class="me-4 text-reset">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
+     </div>
 
   </section>
 
@@ -55,6 +54,7 @@ export default function Footer() {
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
           <h6 class="text-uppercase fw-bold mb-4">
+          <FontAwesomeIcon icon={faGem}/>
             <i class="fas fa-gem me-3"></i>Inmobiliaria
           </h6>
           <p>
@@ -112,13 +112,16 @@ export default function Footer() {
           <h6 class="text-uppercase fw-bold mb-4">
             Contacto
           </h6>
-          <p><i class="fas fa-home me-3"></i>Colombia</p>
+          <p><FontAwesomeIcon icon={faHome}/>
+            <i class="fas fa-home me-3"></i>Colombia</p>
           <p>
-            <i class="fas fa-envelope me-3"></i>
+            <FontAwesomeIcon icon={faEnvelope}/>
             info@example.com
           </p>
-          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          <p>
+            <FontAwesomeIcon icon={faPhone}/>
+             + 01 234 567 88</p>
+          <p><FontAwesomeIcon icon={faPrint}/> + 01 234 567 89</p>
         </div>
 
       </div>
