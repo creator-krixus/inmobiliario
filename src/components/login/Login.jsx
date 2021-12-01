@@ -30,14 +30,15 @@ export default function Login() {
                               <input type="password" id="form2Example27" className="form-control form-control-lg" placeholder="Password"/>
                             </div>
 
-                            <div className="pt-1 mb-1">
-                              <button className="btn btn-dark btn-lg btn-block" type="button">Login</button>
-                            </div>
-
                             <a className="small text-muted" href="#!">Forgot password?</a>
                             <p className="mb-5 pb-lg-2">Don't have an account? <a href="register">Register here</a></p>
                             <a href="#!" className="small text-muted">Terms of use.</a>
                             <a href="#!" className="small text-muted">Privacy policy</a>
+
+                            <div className="pt-1 mb-1">
+                              <button className="btn btn-dark btn-lg btn-block" type="button">Login</button>
+                            </div>
+                            
                           </form>
 
                         </div>
