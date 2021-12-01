@@ -1,13 +1,28 @@
 .contenedorAbout{
     background-color:#FF5733;
-    padding-bottom: 8px;  
+    padding-bottom: 20px;  
 }
 .Qsomos{
     font-size: 60px;
     color: white;
+    
 }
 
 .PqSomos{
     font-size: 20px;
-    color:white;
+    color:black;
+    padding-bottom: 15px;
 }
+
+.botonAbout {
+   
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 25px 10px 25px;
+    background-color: white; /*color botón*/
+    color: #FF5733; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    border-radius: 30px; /*bordes redondos*/
+   
+    
+    }
