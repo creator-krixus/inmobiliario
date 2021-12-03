@@ -4,6 +4,7 @@ import Properties from '../properties/Properties'
 import Slider from '../slider/Slider'
 import About from '../about/About'
 import Title from '../titulo/Title'
+import CustomerInversion from '../customerInversion/CustomerInversion'
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
           <Properties />
           <Title title="Experiencias BREXIU" />
           <CustomerExperience />
+          <CustomerInversion />
       </div>
      
     )}
