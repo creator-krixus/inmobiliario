@@ -3,15 +3,34 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 0.0%;
+    padding: 0.1%;
+    padding-bottom: 0.1%;
+}
+
+.ContenedorBtn{
+    text-align: center;
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .Customer{
     width: 650px;
     max-width: 100%;
-}
+    position: relative;
+    height: 550px;
+    object-fit: cover;
+    padding: auto;
+
+  }
 
 .btnInversion {
-   
     font-size: 20px;
     font-weight: bold;
     padding: 5px 25px 10px 25px;
@@ -19,6 +38,12 @@
     color: white; /*color texto*/
     text-decoration: none; /*decoración texto*/
     border-radius: 30px; /*bordes redondos*/
+    position: absolute;
+    margin-top: 500px;
+    margin-bottom: 10px;
+   
+   
+
     
     
     }
