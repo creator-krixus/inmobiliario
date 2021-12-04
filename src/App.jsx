@@ -8,6 +8,8 @@ import Home from './components/home/Home'
 import SignUp from "./components/register/SignUp";
 import Separator from "./components/separator/Separator";
 
+
+
 function App() {
   return (
     <div className="App">
