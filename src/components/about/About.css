@@ -2,10 +2,10 @@
     background-color:#DC7633 ;
     padding-bottom: 20px;  
 }
+
 .Qsomos{
     font-size: 60px;
-    color: white;
-    
+    color: white;   
 }
 
 .PqSomos{
@@ -15,14 +15,11 @@
 }
 
 .botonAbout {
-   
     font-size: 20px;
     font-weight: bold;
     padding: 5px 25px 10px 25px;
-    background-color: white; /*color botón*/
-    color: #FF5733; /*color texto*/
-    text-decoration: none; /*decoración texto*/
-    border-radius: 30px; /*bordes redondos*/
-   
-    
+    background-color: white;
+    color: #FF5733;
+    text-decoration: none;
+    border-radius: 30px;
     }

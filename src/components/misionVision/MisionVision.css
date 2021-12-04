@@ -1,0 +1,31 @@
+.contenedorMisionVision{
+    padding: 20px;
+    background:  #dc7633ff;
+}
+
+.HMisionVision{
+    color: white;
+    font-size: 30px;
+}
+
+.PMisionvision{
+    font-size: 25px;
+}
+
+.Nuestroequipo{
+    padding: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap:wrap ;
+}
+
+.imgEquipo{
+    margin-top: 10px;
+    width: 200px;
+    max-width: 100%;
+}
+
+.title{
+    margin-top: 15px;
+}
