@@ -1,0 +1,21 @@
+.container__attention{
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+.title__attention{
+    padding: 0 0 2% 0;
+}
+
+.attention{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.rounded-circle{
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
