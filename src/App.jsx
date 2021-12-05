@@ -8,6 +8,7 @@ import SignUp from './components/register/SignUp';
 import Separator from './components/separator/Separator';
 import MisionVision from './components/misionVision/MisionVision'
 import './App.css';
+import ShowProperti from "./components/showPropertie/ShowProperti";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
           <Route path="login" element={<Login/>} />
           <Route path="register" element={<SignUp/>} />
           <Route path="misionvision" element={<MisionVision/>} />
+          <Route path="apartamento" element={<ShowProperti/>} />
+          <Route path="lote" element={<ShowProperti/>} />
+          <Route path="casa" element={<ShowProperti/>} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       <Separator />
