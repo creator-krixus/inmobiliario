@@ -7,12 +7,12 @@ export default function CustomerInversion() {
         <div className="CustomerInversion">
               <div>
                 <img className="Customer" src="https://cdn.pixabay.com/photo/2019/10/02/14/23/house-keys-4521073_960_720.jpg" alt="" /> <br />
-                <Link class="btnInversion" to="#">CONOCE MÁS</Link>
+                <Link className="btnInversion" to="#">CONOCE MÁS</Link>
               </div> 
               
               <div>
                 <img className="Customer" src="https://blog.marivalresorts.com/media/uploads/2016/07/blog_Fe.jpg" alt="" /> <br /> 
-                <Link class="btnInversion" to="#">CONOCE MÁS</Link>
+                <Link className="btnInversion" to="#">CONOCE MÁS</Link>
               </div>  
             
         </div>
