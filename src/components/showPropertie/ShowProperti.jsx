@@ -19,11 +19,9 @@ export default function ShowProperti(props) {
         .then((res) => {
             const respuesta = res.data
             setDatos(respuesta.docs)
-            console.log(datos)
-            console.log(idRuta)
         })
         .catch(error => console.log(error))
-    }, []);
+    },[]);
 
     return (
         <div className="properti">
