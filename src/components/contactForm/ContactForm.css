@@ -1,49 +1,58 @@
 .baseDiv{
-    
-    margin: 5px black;
-    padding: 3%;
-    /* background-image: url("/../inmobiliario/src/images/5914.jpg"); */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    
+    background:lightgrey;
+    padding: 1%;    
 }
 .formulario {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-align: left;
-    color: rgb(0, 68, 255);
     font-weight: bold;
     text-shadow: 0px 0px #000000;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    margin-bottom: 20px;  
 }
-.tituloFormData{
+/* .tituloFormData{
     color: orange;
     border: 20px black;
     font-weight: bold;
     text-shadow: 2px 2px #000000;
-
-}
+} */
 .botonFormulario {
     font-size: 20px;
     font-weight: bold;
     padding: 5px 25px 10px 25px;
-    background-color: rgb(255, 73, 1); /*color botón*/
-    color: rgb(255, 255, 255); /*color texto*/
-    text-decoration: none; /*decoración texto*/
-    border-radius: 30px; /*bordes redondos*/
+    background-color: rgb(255, 73, 1);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 30px;
 }
 .formData {
-    border-style: solid;
-    padding: 2%;
-    border-width: 1px;
-    backdrop-filter: blur(30px);
+    padding: 1%;
+    margin-bottom: 10px;
 }
 .formNombre {
-    border-style: solid;
-    padding: 2%;
-    border-width: 1px;
-    backdrop-filter: blur(30px);
+    padding: 1%;
+    margin-bottom: 10px;
 }
+
+.formData__parrafo{
+    font-size: 1.3rem;
+}
+
+.form-control{
+    width: 450px;
+    margin: 1%;
+}
+
+@media (max-width: 450px) {
+    .form-control {
+     width: 350px;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .form-control {
+     width: 300px;
+    }
+  }  

@@ -3,57 +3,61 @@ import { useState } from 'react'
 import React from 'react'
 import "./ContactForm.css"
 export default function ContactForm() {
-    const [nombre, setNombre] = useState("");
-    const [email, setEmail] = useState("");
-    const [phone, setPhone] = useState("");
+    const [datos, setDatos] = useState({
+        nombre: "",
+        email:"",
+        phone:"",
+        mensaje:""
+    });
 
-    function handleChange(evento){
-        const {name,value} = evento.target;
-        switch(name){
-            case "nombre":
-                setNombre(value);
-                break;
-            case "email":
-                setEmail(value);
-                break;
-            case "phone":
-                setPhone(value);
-                break;
-            default: 
+    const handleChange = (e) => {
+        setDatos({
+            ...datos,
+            [e.target.name]: e.target.value,
+            [e.target.name]: e.target.value,
+            [e.target.name]: e.target.value,
+            [e.target.name]: e.target.value,
+        })
+        console.log(datos)
         }
-    }
+    
 
     return (
         <div className="baseDiv">
             <h2 className="tituloFormData">CONTACTO</h2>
             <br/><br/>
-        <div className="formulario">
-            <div className="formData">
-            
-            <p>Bogota</p>
-            <p>CEL: 310 123 52 23 </p>
-            <p>TEL: 6.04453213</p>
-            <p>EMAIL</p>
-            <p>Direccion</p>
-            </div>
-           
+            <div className="formulario">
 
-            <div className="formNombre">
-            <form>     
-          
-            <label > Nombre : </label>            
-            <input type="text" id="nombre" name="nombre" value={nombre} onChange={handleChange}/><br/>  <br/>         
-            <label > Correo Electronico :  </label>
-            <input type="text" id="email" name="email" value={email} onChange={handleChange}/>  <br/><br/>
-            <label > Numero de telefono : </label>
-            <input type="text" id="phone" name="phone" value={phone} onChange={handleChange} /> 
-            </form >  
-            </div>         
-                  
+                <div className="formData">
+                    <p className="formData__parrafo">Bogota</p>
+                    <p className="formData__parrafo">Cel: 3101235223</p>
+                    <p className="formData__parrafo">Tel: 604453213</p>
+                    <p className="formData__parrafo">Email: contacto@brexiu.com</p>
+                    <p className="formData__parrafo">Direccion: Transversal 59 con diagonal 32</p>
+                </div>
+            
+                <div className="formNombre">
+                    <form>     
+                        
+                        
+                        <input type="text" class="form-control" placeholder="Nombre" name="nombre" onChange={handleChange} aria-label="Username" aria-describedby="basic-addon1" />
+                        
+
+                      
+                        <input type="text" class="form-control" placeholder="Email" name="email" onChange={handleChange} aria-label="Username" aria-describedby="basic-addon1" />
+                        
+
+                       
+                        <input type="text" class="form-control" placeholder="Phone" name="phone" onChange={handleChange} aria-label="Username" aria-describedby="basic-addon1" />
+                        
+
+                        
+                        <textarea class="form-control" aria-label="With textarea" name="mensaje" onChange={handleChange} placeholder="Mensaje" style={{height:'120px'}}></textarea>
+                        
+                    </form>  
+                </div>         
+                    
+            </div>
+            <button className="botonFormulario" type="button">Enviar mensaje</button> 
         </div>
-        
-        <button className="botonFormulario" type="button">Enviar mensaje</button> 
-        </div>
-        
-    )
-}
+    )}
