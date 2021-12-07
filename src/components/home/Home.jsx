@@ -4,8 +4,8 @@ import Properties from '../properties/Properties'
 import Slider from '../slider/Slider'
 import About from '../about/About'
 import Title from '../titulo/Title'
+import ContactForm from '../contactForm/ContactForm'
 import CustomerInversion from '../customerInversion/CustomerInversion'
-
 
 export default function Home() {
     return (
@@ -17,6 +17,7 @@ export default function Home() {
           <Title title="Experiencias BREXIU" />
           <CustomerExperience />
           <CustomerInversion />
+          <ContactForm />
       </div>
      
     )}
