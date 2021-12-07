@@ -1,6 +1,28 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useState} from 'react'
 
 export default function Login() {
+  const [state, setstate] = useState({
+    email: "",
+    password: ""
+  });
+
+  const data = (e) => {
+    setstate({
+      ...state,
+      [e.target.name]: e.target.value,
+      [e.target.name]: e.target.value
+    })
+  }
+
+  const iniciarSesion = () => {
+    axios.post('http://localhost:8000/api/v1/users/login', state)
+      .then(res => {
+        console.log(res.data.token)
+      window.location.href='dasboard'})
+      .catch(error => console.log(error))
+  }
+
     return (
         <div style={{background:'#FF5733'}}>
           <section className="vh-70">
@@ -23,11 +45,11 @@ export default function Login() {
                             <h5 className="fw-normal mb-3 pb-3">Sign into your account</h5>
 
                             <div className="form-outline mb-4">
-                              <input type="email" id="form2Example17" className="form-control form-control-lg" placeholder="Email address"/>
+                              <input type="email" id="form2Example17" name="email" onChange={data} className="form-control form-control-lg" placeholder="Email address"/>
                             </div>
 
                             <div className="form-outline mb-4">
-                              <input type="password" id="form2Example27" className="form-control form-control-lg" placeholder="Password"/>
+                              <input type="password" id="form2Example27" name="password" onChange={data}  className="form-control form-control-lg" placeholder="Password"/>
                             </div>
 
                             <a className="small text-muted" href="#!">Forgot password?</a>
@@ -36,7 +58,7 @@ export default function Login() {
                             <a href="#!" className="small text-muted">Privacy policy</a>
 
                             <div className="pt-1 mb-1">
-                              <button className="btn btn-dark btn-lg btn-block" type="button">Login</button>
+                              <button className="btn btn-dark btn-lg btn-block" onClick={iniciarSesion} type="button">Login</button>
                             </div>
                             
                           </form>
