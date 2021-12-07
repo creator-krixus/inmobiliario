@@ -9,6 +9,7 @@ import Separator from './components/separator/Separator';
 import MisionVision from './components/misionVision/MisionVision'
 import './App.css';
 import ShowProperti from "./components/showPropertie/ShowProperti";
+import Dasboard from "./components/dasboard/Dasboard";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="apartamento" element={<ShowProperti/>} />
           <Route path="lote" element={<ShowProperti/>} />
           <Route path="casa" element={<ShowProperti/>} />
+          <Route path="dasboard" element={<Dasboard/>} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       <Separator />
