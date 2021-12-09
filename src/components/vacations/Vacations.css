@@ -1,0 +1,136 @@
+.Footer{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #ffffbf;
+    height: max-content;
+}
+
+.Footer__hotel{
+    width: 100%;
+}
+
+.Footer__texto-titulo{
+    font-size: 300%;
+    margin-left: 7%;
+}
+.Footer__texto-parrafo{
+    font-size: 110%;
+    margin-left: 7%;
+}
+.Footer__texto-btn{
+    border-radius: 18px;
+    padding: 7px;
+    border: none;
+    margin-top: 9%;
+    margin-left: 40%;
+    background-color: #c6ce00;
+}
+
+
+.Card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.Card__Fontawesome{
+    margin-left: 45%;
+}
+.Card__titulo{
+    margin-left: 36%; 
+}
+.Card__titulo-two{
+    margin-left: 26%; 
+}
+.Card__titulo-three {
+    margin-left: 26%; 
+}
+.one{
+    margin-top: 30%;
+    width: 150px;
+    height: 100px;
+    padding-top: 10%;
+}
+
+
+.Body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.Body__titulo{
+    font-size: 300%;
+    margin-right: 10px;
+}
+
+.Body__parrafo{
+    font-size: 110%;
+    
+}
+.Body__info{
+    padding-top: 2%;
+    padding-left: 2%;
+    background-color: #fff;
+    height: max-content;
+    
+}
+.Body__section-img{
+    width: 385px;
+    height: 470px;
+    max-width: 100%;
+}
+.Body__btn{
+    border-radius: 18px;
+    padding: 7px;
+    border: none;
+    margin-top: 9%;
+    margin-bottom: 9.3%;
+    background-color: #c6ce00;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.Header{
+    height: 300px;
+    background: url('../../images/playa.png');
+    background-size: cover;
+}
+.Header__textos{
+    font-size: 300%;
+    color: #fff;
+    margin-left: 10%;
+}
+.Header__textos-describe{
+    font-size: 100%;
+    padding: 0;
+    margin-left: 10%;
+    color: #fff;
+}
+.Header__lista{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+.Header__lista-items{
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+} 
+.Header__btn{
+    margin-left: 10%;
+    border-radius: 18px;
+    padding: 7px;
+    border: none;
+    margin-top: 2%;
+    margin-bottom: 13%;
+}
