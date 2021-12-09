@@ -1,0 +1,58 @@
+.baseDiv{
+    background:lightgrey;
+    padding: 1%;    
+}
+.formulario {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+    font-weight: bold;
+    text-shadow: 0px 0px #000000;
+    margin-bottom: 20px;  
+}
+/* .tituloFormData{
+    color: orange;
+    border: 20px black;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+} */
+.botonFormulario {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 25px 10px 25px;
+    background-color: rgb(255, 73, 1);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 30px;
+}
+.formData {
+    padding: 1%;
+    margin-bottom: 10px;
+}
+.formNombre {
+    padding: 1%;
+    margin-bottom: 10px;
+}
+
+.formData__parrafo{
+    font-size: 1.3rem;
+}
+
+.form-control{
+    width: 450px;
+    margin: 1%;
+}
+
+@media (max-width: 450px) {
+    .form-control {
+     width: 350px;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .form-control {
+     width: 300px;
+    }
+  }  

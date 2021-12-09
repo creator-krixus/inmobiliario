@@ -16,34 +16,34 @@
     justify-content: space-around;
     flex-wrap: wrap;
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto; 
+    margin-top: 10px;
+    position: relative;  
 }
 
 .Customer{
     width: 650px;
     max-width: 100%;
-    position: relative;
-    height: 550px;
-    object-fit: cover;
+    height: 350px;
+    /* object-fit: cover; */
     padding: auto;
-
-  }
+}
 
 .btnInversion {
     font-size: 20px;
     font-weight: bold;
     padding: 5px 25px 10px 25px;
-    background-color: #FF5733; /*color botón*/
-    color: white; /*color texto*/
-    text-decoration: none; /*decoración texto*/
-    border-radius: 30px; /*bordes redondos*/
+    background-color: #FF5733;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
     position: absolute;
-    margin-top: 500px;
-    margin-bottom: 10px;
-   
-   
-
-    
-    
-    }
+    top: 295px;
+}
+.info{
+    background: #fff;
+    border-radius: 10px;
+    padding: 1px 25px 1px 25px;
+    top: 240px;
+    position: absolute;
+}

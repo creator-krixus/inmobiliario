@@ -1,8 +1,66 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './SignUp.css'
 import logo from '../../images/logo.png'
+import swal from 'sweetalert'
+import axios from 'axios'
 
 export default function SingUp() {
+    const [state, setstate] = useState({
+        email: "",
+        password: "",
+        confirmPassword:""
+    })
+
+    const clear = () => { 
+      document.getElementById("form").reset();
+      window.location.reload();
+    }
+
+    const data = (e) => {
+      setstate({
+        ...state,
+        [e.target.name]: e.target.value,
+        [e.target.name]: e.target.value,
+        [e.target.name]: e.target.value
+      })
+    }
+
+    const enviarDatos = (e) => {
+      e.preventDefault();
+      if(state.email === "" || state.password === "" || state.password !== state.confirmPassword){
+          swal({
+            title: 'Error',
+            text: 'Uno o varios campos mal diligenciados',
+            icon: 'error',
+            button: 'Aceptar'
+        })
+      setTimeout(clear, 2500)
+      }else{
+        axios.post('http://localhost:8000/api/v1/users/register', state)
+          .then(res => {
+            if(res.data.code === 11000){
+              swal({
+                title: 'Error',
+                text: 'Email ya registrado',
+                icon: 'error',
+                button: 'Aceptar'
+            })
+            setTimeout(clear, 2500)
+            }else{
+              swal({
+                title: 'Registro exitoso',
+                text: 'Ahora puedes ingresar',
+                icon: 'success',
+                button: 'Aceptar'
+            })
+            setTimeout(clear, 2500)
+            }
+          })
+          .catch(error => console.log(error))
+          setTimeout(clear, 2500)
+      }
+    }
+
     return (
         <div style={{background:'#FF5733'}}>
           <section className="h-100 gradient-form">
@@ -16,22 +74,22 @@ export default function SingUp() {
                         <img src={logo} style={{width:90}} alt="logo" />
                             <h4 className="mt-1 mb-1 pb-1">We are The Brexiu Team</h4>
 
-                          <form>
-                            <p>Registro de nuevo usuario</p>
+                          <form id="form">
+                            <h3>Registro de nuevo usuario</h3>
 
                             <div className="form-outline mb-4">
-                              <input type="email" id="form2Example11" className="form-control" placeholder="Email address"/>
+                              <input type="email" name="email" onChange={data} className="form-control" placeholder="Email address"/>
                             </div>
 
                             <div className="form-outline mb-4">
-                              <input type="password" className="form-control" placeholder="Password"/>
+                              <input type="password" name="password" onChange={data} className="form-control" placeholder="Password"/>
                             </div>
                             <div className="form-outline mb-4">
-                              <input type="password" className="form-control" placeholder="Confirm password"/>
+                              <input type="password" name="confirmPassword" onChange={data} className="form-control" placeholder="Confirm password"/>
                             </div>
 
                             <div className="text-center pt-1 mb-1 pb-1">
-                              <button className="btn btn-primary btn-block fa-lg gradient-custom-2 mb-1" type="button">Sing Up</button>
+                              <button className="btn btn-primary btn-block fa-lg gradient-custom-2 mb-1" type="button" onClick={enviarDatos}>Sing Up</button>
                             </div>
                           </form>
 
