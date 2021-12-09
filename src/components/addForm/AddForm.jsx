@@ -1,82 +1,178 @@
-import React from 'react';
-import { useForm } from "react-hook-form";
-
+import React, { useState } from 'react';
+import './AddForm.css'
+import swal from 'sweetalert'
+import axios from 'axios';
 
 export default function AddForm() {
-    const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    const [state, setstate] = useState({
+      clase: "",
+      precio:"",
+      estado:"",
+      area:"",
+      habitaciones:"",
+      baños:"",
+      parqueaderos:"",
+      estrato:"",
+      piso:"",
+      imagenes:"",
+      descripcion:""
+    })
+
+    const handleChange = (e) => {
+      setstate({
+        ...state,
+      [e.target.name]: e.target.value,
+      [e.target.name]: e.target.value,
+      [e.target.name]: e.target.value,
+      [e.target.name]: e.target.value,
+      [e.target.name]: e.target.value,
+      [e.target.name]: e.target.value,
+      [e.target.name]: e.target.value,
+      [e.target.name]: e.target.value,
+      [e.target.name]: e.target.value,
+      [e.target.name]: e.target.value,
+      [e.target.name]: e.target.value,
+
+    })
+  }
+
+  const sendData = (e) => {
+    e.preventDefault();
+    axios.post('http://localhost:8000/api/v1/estate', state)
+        .then(data => {
+            console.log(data);
+            swal({
+                title: 'Maravilloso',
+                text: 'Informacion enviada con exito',
+                icon: 'success',
+                button: 'Aceptar'
+            })
+        })
+        .catch(error => console.log(error))
+}
+
+
     return (
-        <div>
-                  
-        <legend>Agregar</legend>
-        
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="register">
+            <form className="register__propertie">
+              <div>
+                <label htmlFor="clase"> Tipo de inmueble </label>
 
-        {/* Tipo de inmueble */}
-      <label for="fClass"> Tipo de inmueble </label><br/>
-      <select id="fClass" {...register("Clase")}>
-        <option value="apartamento">Casa</option>
-        <option value="casa">Apartamento</option>
-        <option value="lote">Lote</option>
-      </select> <br/>
-        {/* Precio */}
-      <label for="fPrice"> Precio en dolares</label><br/>
-      <input id="fPrice" min="5000" defaultValue="$" type="Number" minLength="4" maxLength="10" prefix="$" placeholder="$" {...register("Precio", {required: true})} /> <br/>
-      {/* Venta o alquiler */}
-      <label for="fState"> Estado </label> <br/>
-      <select id="fState" {...register("Estado")}>
-            <option value="venta">Venta</option>
-            <option value="alquiler">Alquiler</option>
-        </select><br />
-        {/* Area en m2 */}
-      <label for="fArea">Area en m2</label> <br />
-      <input id="fArea" type="number" min="1" minLength="2" maxLength="5" {...register("Area", {required:true})} /> <br />
-      {/* Numero de habitaciones */}
-      <label for="fRooms">Habitaciones</label> <br />
-      <input id="fRooms" type="number" min="1" minLength="2" maxLength="5" {...register("Habitaciones", {required:true})} /> <br />
-      {/* Numero de parqueaderos */}
-      <label for="fParking">Numero de parqueaderos</label> <br />
-      <input id="fParking" type="number" min="1" minLength="1" maxLength="2" {...register("Parqueadero", {required:true})} /> <br />
-      {/* Numero de baños */}
-      <label for="fBath">Numero de baños</label> <br />
-      <input id="fBath" type="number" min="1" minLength="1" maxLength="2" {...register("Baños", {required:true})} /> <br />
-      {/* Estrato o calidad de la ubicacion */}
-      <label for="fEstrato">Estrato</label>
-      <select id="fState" {...register("Estado")}>
-            <option value="" name="estrato">1</option>
-            <option value="" name="estrato">2</option>
-            <option value="" name="estrato">3</option>
-            <option value="" name="estrato">4</option>
-            <option value="" name="estrato">5</option>
-            <option value="" name="estrato">6</option>
-        </select><br />
+                <select 
+                  name='clase'
+                  className='form-control'
+                  onChange={handleChange}
+                  placeholder='Select...'
+                  >
+                  <option selected disabled>Select...</option>
+                  <option value="casa">Casa</option>
+                  <option value="apartamento">Apartamento</option>
+                  <option value="lote">Lote</option>
+                </select>
+              </div>
 
-{/*       <label for="fEstrato">Estrato</label> <br />
-      <input type="radio" id="fEstrato1" value="1" name="estrato" {...register("1")}/>
-      <label for="fEstrato1">1</label>
-      <input type="radio" id="fEstrato2" value="2" name="estrato" {...register("2")} />
-      <label for="fEstrato2">2</label>
-      <input type="radio" id="fEstrato3" value="3" name="estrato"{...register("3")}/>
-      <label for="fEstrato3">3</label>
-      <input type="radio" id="fEstrato4" value="4" name="estrato"{...register("4")}/>
-      <label for="fEstrato4">4</label>
-      <input type="radio" id="fEstrato5" value="5" name="estrato"{...register("5")}/>
-      <label for="fEstrato5">5</label>
-      <input type="radio" id="fEstrato6" value="6" name="estrato"{...register("6")}/> */}
+              <div>
+                <label htmlFor="precio"> Precio en dolares</label><br/>
+                <input 
+                  name="precio"
+                  type="Number" 
+                  placeholder="Valor de l inmueble" 
+                  onChange={handleChange} 
+                  className='form-control'
+                />
+              </div>
 
-      
-      {/* Cantidad de plantas del inmueble */}
-      <label for="fPisos">Numero de pisos</label> <br />
-      <input id="fPisos" type="number" min="1" minLength="1" maxLength="2" {...register("Pisos", {required:true})} /> <br />
-      {/* Text area */}
-      <label for="fDescripcion"> Descripcion corta </label> <br />
-      <textarea id="fDescripcion" type="textarea" height="12" placeholder="Propiedad bien ubicada..." {...register("Descripcion", {required:true})}/> <br/>
-      
-      <input type="submit" />
-    </form>
+              <div>
+                <label htmlFor="estado"> Estado </label> <br/>
+                <select 
+                  name='estado'
+                  onChange={handleChange}
+                  placeholder='Select...'
+                  className='form-control'
+                >
+                      <option selected disabled>Select...</option>
+                      <option value="venta">Venta</option>
+                      <option value="alquiler">Alquiler</option>
+                  </select>
+              </div>  
 
-        
-        
+              <div>
+                <label htmlFor="area">Area en m2</label>
+                <input 
+                  name='area'
+                  type="Number"
+                  onChange={handleChange}
+                  className='form-control'
+                />
+              </div> 
+
+              <div>
+                <label htmlFor="habitaciones">Habitaciones</label> <br />
+                <input 
+                  name='habitaciones'
+                  type="Number"
+                  onChange={handleChange}
+                  className='form-control'/>
+              </div> 
+
+              <div>
+                <label htmlFor="parqueaderos">Numero de parqueaderos</label> <br />
+                <input 
+                name='parqueaderos'
+                type="Number"
+                onChange={handleChange}
+                className='form-control'/>
+              </div> 
+
+              <div>
+                <label htmlFor="baños">Numero de baños</label> <br />
+                <input 
+                name='baños'
+                type="Number"
+                onChange={handleChange}
+                className='form-control'/>
+              </div> 
+
+              <div>
+                <label htmlFor="estrato">Estrato</label>
+                <input 
+                name='estrato'
+                type='Number'
+                onChange={handleChange}
+                className='form-control'>
+                  </input>
+              </div>
+
+              <div>
+                <label htmlFor="piso">Numero de pisos</label> <br />
+                <input 
+                name='piso'
+                type="Number"
+                onChange={handleChange}
+                className='form-control'/>
+              </div>
+
+              <div>
+                <label htmlFor="imagenes">Imagen de la propiedad</label> <br />
+                <input 
+                name='imagenes'
+                type="text"
+                onChange={handleChange}
+                className='form-control'/>
+              </div>
+
+              <div>
+                <label htmlFor="descripcion"> Descripcion corta </label> <br />
+                <textarea 
+                name='descripcion'
+                type="text"
+                onChange={handleChange}
+                className='form-control'/>
+              </div>  
+            </form>
+            <div>
+              <input type="submit" onClick={sendData}/>
+            </div>
         </div>
     )
 }

@@ -46,27 +46,13 @@
 .descripcion{
     font-size: 16px;
 }
-h1{
-    font-size: 5rem;
-    font-weight: 0.8rem;
-}
-h2{
-    font-size: 4rem;
-}
-
-/* 
-.texto-borde {
-    font-size: 1.5rem;
-    color:white;
-    text-shadow: -2px -2px 1px black;
-  } */
 
 .titulo{
 margin: 0.1rem;
 padding: 0.1rem;
 text-align:center;
 background: #dc7633ff;
-font-size: 4.5rem;
+font-size: 3.5rem;
 color: white; 
 }  
 

@@ -20,22 +20,31 @@ export default function ContactForm() {
             [e.target.name]: e.target.value,
             [e.target.name]: e.target.value,
         })
-        console.log(datos)
         }
 
     const sendData = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:8000/api/v1/contacto', datos)
-            .then(data => {
-                console.log(data);
-                swal({
-                    title: 'Maravilloso',
-                    text: 'Informacion enviada con exito',
-                    icon: 'success',
-                    button: 'Aceptar'
-                })
+        if(datos.nombre === "" || datos.email === "" || datos.phone === "" || datos.mensaje === ""){
+            swal({
+                title: 'Upps',
+                text: 'Faltan campos por llenar',
+                icon: 'warning',
+                button: 'Aceptar'
             })
-            .catch(error => console.log(error))
+            console.log(datos)
+        }else{
+            axios.post('http://localhost:8000/api/v1/contacto', datos)
+                .then(data => {
+                    console.log(data);
+                    swal({
+                        title: 'Maravilloso',
+                        text: 'Informacion enviada con exito',
+                        icon: 'success',
+                        button: 'Aceptar'
+                    })
+                })
+                .catch(error => console.log(error))
+        }    
     }
 
     return (
