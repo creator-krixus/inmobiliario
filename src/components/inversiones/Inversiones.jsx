@@ -1,4 +1,5 @@
 import React from 'react'
+import ContactForm from '../contactForm/ContactForm'
 import './Inversions.css'
 import sala from '../../images/sala.png'
 import water from '../../images/piscina.png'
@@ -63,78 +64,67 @@ export default function Inversiones() {
                   <img src={edificio1} className="d-block w-100" width="304" height="380" alt="Casas" />
                  <div className="carousel-caption d-none d-md-block">
                   <h5 className="texto-borde">Mejores ubicaciones</h5>
-                  <p className="texto-bordeP">Lugares increibles</p>
-                </div>
+                  </div>
               </div>
             
           <div className="carousel-item">
                 <img src={cocina} className="d-block w-100" width="304" height="380" alt="Apartamentos" />
                 <div className="carousel-caption d-none d-md-block">
                   <h5 className="texto-borde">Tranquilida y confianza</h5>
-                  <p className="texto-bordeP">Inveriones que aumentan su valor en el tiempo.</p>
-                 </div>
+                </div>
            </div>
            <div className="carousel-item">
                 <img src={edificio} className="d-block w-100" width="304" height="380" alt="Apartamentos" />
                 <div className="carousel-caption d-none d-md-block">
                   <h5 className="texto-borde">Propiedades a lo largo y ancho de las americas</h5>
-                  <p className="texto-bordeP">Tenemos presencia en norte, centro y suramerica.</p>
-                 </div>
-           </div>
+                </div>
+            </div>
            <div className="carousel-item">
                 <img src={panoramica} className="d-block w-100" width="304" height="380" alt="Apartamentos" />
                 <div className="carousel-caption d-none d-md-block">
                   <h5 className="texto-borde">Inveriones con una gran seguridad de crecimiento</h5>
-                  <p className="texto-bordeP">los informes del real State confirman.</p>
-                 </div>
+                  </div>
            </div>
            <div className="carousel-item">
                 <img src={finca} className="d-block w-100" width="304" height="380" alt="Apartamentos" />
                 <div className="carousel-caption d-none d-md-block">
                   <h5 className="texto-borde">Amplias y hermosas ubicaciones</h5>
-                  <p className="texto-bordeP">los lugares más hermosos en cada pais del contienente americano.</p>
-                 </div>
+                </div>
            </div>
            <div className="carousel-item">
                 <img src={salon} className="d-block w-100" width="304" height="380" alt="Apartamentos" />
                 <div className="carousel-caption d-none d-md-block">
                   <h5 className="texto-borde">Comprometidos con su comodidad</h5>
-                  <p className="texto-bordeP"> Nos preocupamos por mejores condiciones  </p>
-                 </div>
+                </div>
            </div>
            <div className="carousel-item">
                 <img src={sala} className="d-block w-100" width="304" height="380" alt="Apartamentos" />
                 <div className="carousel-caption d-none d-md-block">
                   <h5 className="texto-borde">Fácil acceso a todo el portafolio de inmuebles</h5>
-                  <p className="texto-bordeP">desde la comodidad de tu hogar</p>
-                 </div>
+                </div>
            </div>
            <div className="carousel-item">
                 <img src={patio} className="d-block w-100" width="304" height="380" alt="Apartamentos" />
                 <div className="carousel-caption d-none d-md-block">
                   <h5 className="texto-borde">inmuebles con estándares de resort</h5>
-                  <p className="texto-bordeP">Sin preocuparse por una alta inversión</p>
-                 </div>
+                </div>
            </div>
            <div className="carousel-item">
                 <img src={familia} className="d-block w-100" width="304" height="380" alt="Apartamentos" />
                 <div className="carousel-caption d-none d-md-block">
                   <h5 className="texto-borde">La familia lo más importante </h5>
-                  <p className="texto-bordeP">Buscamos por usted el mejor espacio para su hogar.</p>
-                 </div>
+                </div>
            </div>
            <div className="carousel-item">
                 <img src={farol} className="d-block w-100" width="304" height="350" alt="Apartamentos" />
                 <div className="carousel-caption d-none d-md-block">
                   <h5 className="texto-borde">Nos preocupamos por el medio ambiente</h5>
-                  <p className="texto-bordeP">espacios amigables con la Fauna y flora silvestre alrededor.</p>
-                 </div>
+                </div>
            </div>
            <div className="carousel-item">
                 <img src={water} className="d-block w-100" width="304" height="380" alt="Locales" />
                 <div className="carousel-caption d-none d-md-block">
                   <h5 className="texto-borde">Exclusivas fracciones de copropiedad</h5>
-                  <p className="texto-bordeP">optimizando la diversificación de la inversión.</p>
                 </div>
             </div>
            
@@ -152,7 +142,8 @@ export default function Inversiones() {
        </div>  
             
     </div>
-      
+      <ContactForm />
  </div>
+
     )
 }
