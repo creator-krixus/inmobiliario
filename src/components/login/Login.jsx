@@ -19,7 +19,7 @@ export default function Login() {
     axios.post('http://localhost:8000/api/v1/users/login', state)
       .then(res => {
         console.log(res.data.token)
-      window.location.href='dasboard'})
+        window.location.href='dasboard'})
       .catch(error => console.log(error))
   }
 
@@ -58,7 +58,7 @@ export default function Login() {
                             <a href="#!" className="small text-muted">Privacy policy</a>
 
                             <div className="pt-1 mb-1">
-                              <button className="btn btn-dark btn-lg btn-block" onClick={iniciarSesion} type="button">Login</button>
+                              <button className="btn btn-lg btn-block" onClick={iniciarSesion} type="button" style={{background:'#dc7633ff'}}>Login</button>
                             </div>
                             
                           </form>

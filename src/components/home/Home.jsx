@@ -7,6 +7,7 @@ import Title from '../titulo/Title'
 import ContactForm from '../contactForm/ContactForm'
 import CustomerInversion from '../customerInversion/CustomerInversion'
 
+
 export default function Home() {
     return (
       <div>
@@ -18,6 +19,7 @@ export default function Home() {
           <CustomerExperience />
           <CustomerInversion />
           <ContactForm />
+          
       </div>
      
     )}

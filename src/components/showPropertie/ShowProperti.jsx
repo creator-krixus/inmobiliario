@@ -37,7 +37,7 @@ export default function ShowProperti(props) {
                 area={item.area}
                 habitaciones={item.habitaciones}
                 baños={item.baños}  
-                parqueaderos={item.parqueadero}
+                parqueaderos={item.parqueaderos}
                 estrato={item.estrato}
                 />
             )}
