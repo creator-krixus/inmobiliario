@@ -19,7 +19,7 @@ export default function Login() {
     axios.post('http://localhost:8000/api/v1/users/login', state)
       .then(res => {
         console.log(res.data.token)
-      window.location.href='dasboard'})
+        window.location.href='dasboard'})
       .catch(error => console.log(error))
   }
 

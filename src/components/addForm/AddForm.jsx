@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 
 
 export default function AddForm() {
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => console.log(data);
     return (
         <div>
@@ -15,13 +15,13 @@ export default function AddForm() {
         {/* Tipo de inmueble */}
       <label for="fClass"> Tipo de inmueble </label><br/>
       <select id="fClass" {...register("Clase")}>
-        <option value="casa">Casa</option>
-        <option value="apartamento">Apartamento</option>
+        <option value="apartamento">Casa</option>
+        <option value="casa">Apartamento</option>
         <option value="lote">Lote</option>
       </select> <br/>
         {/* Precio */}
       <label for="fPrice"> Precio en dolares</label><br/>
-      <input id="fPrice" min="5000" defaultValue="$" type="number" minLength="4" maxLength="10" prefix="$" placeholder="$" {...register("Precio", {required: true})} /> <br/>
+      <input id="fPrice" min="5000" defaultValue="$" type="Number" minLength="4" maxLength="10" prefix="$" placeholder="$" {...register("Precio", {required: true})} /> <br/>
       {/* Venta o alquiler */}
       <label for="fState"> Estado </label> <br/>
       <select id="fState" {...register("Estado")}>
@@ -41,8 +41,17 @@ export default function AddForm() {
       <label for="fBath">Numero de baños</label> <br />
       <input id="fBath" type="number" min="1" minLength="1" maxLength="2" {...register("Baños", {required:true})} /> <br />
       {/* Estrato o calidad de la ubicacion */}
-      <label for="fEstrato">Estrato</label> <br />
-      {/* "Lo del estrato si dependera del pais" */}
+      <label for="fEstrato">Estrato</label>
+      <select id="fState" {...register("Estado")}>
+            <option value="" name="estrato">1</option>
+            <option value="" name="estrato">2</option>
+            <option value="" name="estrato">3</option>
+            <option value="" name="estrato">4</option>
+            <option value="" name="estrato">5</option>
+            <option value="" name="estrato">6</option>
+        </select><br />
+
+{/*       <label for="fEstrato">Estrato</label> <br />
       <input type="radio" id="fEstrato1" value="1" name="estrato" {...register("1")}/>
       <label for="fEstrato1">1</label>
       <input type="radio" id="fEstrato2" value="2" name="estrato" {...register("2")} />
@@ -53,8 +62,9 @@ export default function AddForm() {
       <label for="fEstrato4">4</label>
       <input type="radio" id="fEstrato5" value="5" name="estrato"{...register("5")}/>
       <label for="fEstrato5">5</label>
-      <input type="radio" id="fEstrato6" value="6" name="estrato"{...register("6")}/>
-      <label for="fEstrato6">6</label> <br />
+      <input type="radio" id="fEstrato6" value="6" name="estrato"{...register("6")}/> */}
+
+      
       {/* Cantidad de plantas del inmueble */}
       <label for="fPisos">Numero de pisos</label> <br />
       <input id="fPisos" type="number" min="1" minLength="1" maxLength="2" {...register("Pisos", {required:true})} /> <br />
@@ -62,7 +72,6 @@ export default function AddForm() {
       <label for="fDescripcion"> Descripcion corta </label> <br />
       <textarea id="fDescripcion" type="textarea" height="12" placeholder="Propiedad bien ubicada..." {...register("Descripcion", {required:true})}/> <br/>
       
-
       <input type="submit" />
     </form>
 
