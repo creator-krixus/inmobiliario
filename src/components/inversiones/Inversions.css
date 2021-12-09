@@ -1,0 +1,85 @@
+.separador{
+    background-color: #dc7633ff;
+    padding: 1%;
+    color:white;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.carrusel{
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.contene{
+    width: 50%;
+}
+
+.CustomerInversion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* .ContenedorCarrousel{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+ */
+.PqSomos{
+    padding: 25px;
+    color:black;
+    padding-bottom: 15px;
+    align-content: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.ContenedorParrafo{
+    text-align: left;
+    justify-content: center;
+}
+
+.descripcion{
+    font-size: 16px;
+}
+h1{
+    font-size: 5rem;
+    font-weight: 0.8rem;
+}
+h2{
+    font-size: 4rem;
+}
+
+
+.texto-borde {
+    font-size: 1.5rem;
+    color:white;
+    text-shadow: -2px -2px 1px black;
+  }
+
+.titulo{
+margin: 0.3rem;
+padding: 0.3rem;
+text-align:center;
+color: black;
+background: #dc7633ff;
+font-family: impact;
+font-size: 3.3rem;
+text-shadow: -2px -2px 1px white, 2px 2px 1px whitesmoke, -2px 2px 1px white, 2px -2px 1px white; 
+
+}  
+
+.texto-bordeP{
+margin: 0.1rem;
+padding: 0.2rem;
+text-align:center;
+color: black;
+font-family: impact;
+font-size: 1.3rem;
+
+text-shadow: -2px -2px 1px white, 2px 2px 1px whitesmoke, -2px 2px 1px white, 2px -2px 1px white; 
+}
