@@ -1,7 +1,9 @@
+import { useState } from 'react';
+import React from 'react';
+import "./ContactForm.css";
+import axios from 'axios';
+import swal from 'sweetalert'
 
-import { useState } from 'react'
-import React from 'react'
-import "./ContactForm.css"
 export default function ContactForm() {
     const [datos, setDatos] = useState({
         nombre: "",
@@ -20,7 +22,21 @@ export default function ContactForm() {
         })
         console.log(datos)
         }
-    
+
+    const sendData = (e) => {
+        e.preventDefault();
+        axios.post('http://localhost:8000/api/v1/contacto', datos)
+            .then(data => {
+                console.log(data);
+                swal({
+                    title: 'Maravilloso',
+                    text: 'Informacion enviada con exito',
+                    icon: 'success',
+                    button: 'Aceptar'
+                })
+            })
+            .catch(error => console.log(error))
+    }
 
     return (
         <div className="baseDiv">
@@ -41,16 +57,10 @@ export default function ContactForm() {
                         
                         
                         <input type="text" class="form-control" placeholder="Nombre" name="nombre" onChange={handleChange} aria-label="Username" aria-describedby="basic-addon1" />
-                        
-
-                      
+                    
                         <input type="text" class="form-control" placeholder="Email" name="email" onChange={handleChange} aria-label="Username" aria-describedby="basic-addon1" />
                         
-
-                       
                         <input type="text" class="form-control" placeholder="Phone" name="phone" onChange={handleChange} aria-label="Username" aria-describedby="basic-addon1" />
-                        
-
                         
                         <textarea class="form-control" aria-label="With textarea" name="mensaje" onChange={handleChange} placeholder="Mensaje" style={{height:'120px'}}></textarea>
                         
@@ -58,6 +68,6 @@ export default function ContactForm() {
                 </div>         
                     
             </div>
-            <button className="botonFormulario" type="button">Enviar mensaje</button> 
+            <button className="botonFormulario" type="button" onClick={sendData}>Enviar mensaje</button> 
         </div>
     )}
