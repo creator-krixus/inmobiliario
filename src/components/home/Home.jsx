@@ -12,9 +12,9 @@ export default function Home() {
       <div>
           <Slider />
           <About />
-          <Title title="Inmuebles BREXIU"/>
+          <Title title="Inmuebles Relieve"/>
           <Properties />
-          <Title title="Experiencias BREXIU" />
+          <Title title="Experiencias Relieve" />
           <CustomerExperience />
           <CustomerInversion />
           <ContactForm />

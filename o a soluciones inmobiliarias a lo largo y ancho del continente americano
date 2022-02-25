@@ -1,0 +1,260 @@
+[33mcommit 429af7bb00d605ebfa98978eebb9bb09c356e768[m[33m ([m[1;36mHEAD -> [m[1;32mcesar[m[33m, [m[1;31morigin/cesar[m[33m)[m
+Author: CESAR ANDRES ABADIA DAVILA <ceanabad@gmail.com>
+Date:   Wed Dec 8 22:09:03 2021 -0500
+
+    Fix: Page inversion refactorizacion
+
+[33mcommit 7740e4237de4c6cd17daea03e7cc0d84715eb52a[m
+Merge: 769126b bc5b3cd
+Author: CESAR ANDRES ABADIA DAVILA <ceanabad@gmail.com>
+Date:   Wed Dec 8 21:06:33 2021 -0500
+
+    Fix:conflicts result
+
+[33mcommit 769126b9c57ff07142b81479eb044e53c3e8f082[m
+Author: CESAR ANDRES ABADIA DAVILA <ceanabad@gmail.com>
+Date:   Wed Dec 8 20:39:04 2021 -0500
+
+    Feature: Inverdiones page done
+
+[33mcommit bc5b3cd09d28e15ef2db0d7042b25131f5fcd1a9[m[33m ([m[1;31morigin/develop[m[33m)[m
+Merge: 2ab061b 9468f5e
+Author: Wilson Rueda <69820208+creator-krixus@users.noreply.github.com>
+Date:   Wed Dec 8 19:56:11 2021 -0500
+
+    Merge pull request #32 from creator-krixus/wilson
+    
+    Wilson
+
+[33mcommit 9468f5ea4803f50bded22a85eb8a51393c12a728[m
+Author: creator-krixus <wilsonrueda2@gmail.com>
+Date:   Wed Dec 8 19:55:11 2021 -0500
+
+    multi-component refactoring
+
+[33mcommit 0d883f330b83220dbd9a0ffcd9fa9f651b134af2[m
+Author: creator-krixus <wilsonrueda2@gmail.com>
+Date:   Tue Dec 7 21:46:34 2021 -0500
+
+    Feature: Form connected with backend
+
+[33mcommit 2ab061ba7fd9aa628b01a824e47e0beb240a0c04[m
+Merge: e5fbd31 d7466d2
+Author: Wilson Rueda <69820208+creator-krixus@users.noreply.github.com>
+Date:   Tue Dec 7 02:09:00 2021 -0500
+
+    Merge pull request #30 from creator-krixus/wilson
+    
+    Wilson
+
+[33mcommit d7466d296a3a530227dfbb8b947ce57ca3acc3f1[m
+Author: creator-krixus <wilsonrueda2@gmail.com>
+Date:   Tue Dec 7 02:08:04 2021 -0500
+
+    Feature: Changes in contactForm
+
+[33mcommit 9ffb0ded2d386ed0e905b9e6719a0a7fbb7a01fd[m
+Merge: 9a53f5d bb0b427
+Author: creator-krixus <wilsonrueda2@gmail.com>
+Date:   Tue Dec 7 00:46:08 2021 -0500
+
+    Feature: accept changes of david
+
+[33mcommit e5fbd3158666c2f7f342a1b6b80b0237df25c974[m
+Merge: a19bbbd 9a53f5d
+Author: Wilson Rueda <69820208+creator-krixus@users.noreply.github.com>
+Date:   Tue Dec 7 00:45:36 2021 -0500
+
+    Merge pull request #29 from creator-krixus/wilson
+    
+    Feature: Redirection dasboard from login unverified
+
+[33mcommit 9a53f5d6db0d89eea4dae66f55aeff6ff05af964[m
+Author: creator-krixus <wilsonrueda2@gmail.com>
+Date:   Tue Dec 7 00:28:16 2021 -0500
+
+    Feature: Redirection dasboard from login unverified
+
+[33mcommit a19bbbd2075deef02ad7bde48221d58046cbd9e5[m
+Merge: a229649 29e3437
+Author: Wilson Rueda <69820208+creator-krixus@users.noreply.github.com>
+Date:   Mon Dec 6 00:04:56 2021 -0500
+
+    Merge pull request #27 from creator-krixus/wilson
+    
+    Fix: Solution fix in showProperti
+
+[33mcommit 29e3437b48e242f65cb6a72a0de3a93a94c08eaf[m
+Author: creator-krixus <wilsonrueda2@gmail.com>
+Date:   Mon Dec 6 00:04:11 2021 -0500
+
+    Fix: Solution fix in showProperti
+
+[33mcommit a22964989c2dd5e46ac77339bbe83c0d271d1eec[m
+Merge: 4020a84 2718218
+Author: Wilson Rueda <69820208+creator-krixus@users.noreply.github.com>
+Date:   Sun Dec 5 10:51:06 2021 -0500
+
+    Merge pull request #24 from creator-krixus/wilson
+    
+    Wilson
+
+[33mcommit 27182180f861d7554d6de1c616826f8f4a0c8ec3[m
+Author: creator-krixus <wilsonrueda2@gmail.com>
+Date:   Sun Dec 5 10:49:00 2021 -0500
+
+    Fix: Change css CustomerInversion
+
+[33mcommit 90432d83631eec14006caaa7c559e8e8630a7883[m
+Merge: 8d7ea41 4020a84
+Author: CESAR ANDRES ABADIA DAVILA <ceanabad@gmail.com>
+Date:   Sun Dec 5 10:04:54 2021 -0500
+
+    Merge branch 'develop' of https://github.com/creator-krixus/inmobiliario into cesar
+
+[33mcommit 4020a84284e1a87cbdb3d2c14fc5b3f24373b8b9[m
+Merge: a85cfd1 210c183
+Author: Wilson Rueda <69820208+creator-krixus@users.noreply.github.com>
+Date:   Sun Dec 5 09:50:54 2021 -0500
+
+    Merge pull request #23 from creator-krixus/wilson
+    
+    Feature: Call a API and render of data
+
+[33mcommit d44df1412b936f36f8b2347b03bff733ddd0f3b6[m
+Merge: 210c183 8d7ea41
+Author: creator-krixus <wilsonrueda2@gmail.com>
+Date:   Sun Dec 5 00:19:01 2021 -0500
+
+    Merge branch 'cesar' of https://github.com/creator-krixus/inmobiliario into wilson
+
+[33mcommit 210c18389b6c06b6df516dba893350b2664dc9f8[m
+Author: creator-krixus <wilsonrueda2@gmail.com>
+Date:   Sat Dec 4 23:56:45 2021 -0500
+
+    Feature: Call a API and render of data
+
+[33mcommit a85cfd122e3be28686a410c4b1b87217012357f5[m
+Merge: 265016c 0d24e35
+Author: Wilson Rueda <69820208+creator-krixus@users.noreply.github.com>
+Date:   Sat Dec 4 18:47:37 2021 -0500
+
+    Merge pull request #22 from creator-krixus/wilson
+    
+    Wilson
+
+[33mcommit 0d24e35cbcdd15d2188fd438ebe578308822c817[m
+Author: creator-krixus <wilsonrueda2@gmail.com>
+Date:   Sat Dec 4 18:46:56 2021 -0500
+
+    Feature: Modified mision vision and created attention folder
+
+[33mcommit 529a0bc31925220f748096dbe06083f6df463a87[m
+Merge: f44ea4a 4a93c0b
+Author: Wilson Rueda <69820208+creator-krixus@users.noreply.github.com>
+Date:   Sat Dec 4 16:38:44 2021 -0500
+
+    Merge pull request #21 from creator-krixus/jaime
+    
+    Jaime
+
+[33mcommit f44ea4a3bfc524a4b2820c71696c0cfd75921d0a[m
+Author: creator-krixus <wilsonrueda2@gmail.com>
+Date:   Sat Dec 4 16:36:30 2021 -0500
+
+    Feature: responsive properties component
+
+[33mcommit bb0b427c8594f8b12506ebc6a25df52207bb3ab9[m
+Author: David Charif <davidcharif@hotmail.com>
+Date:   Sat Dec 4 15:46:35 2021 -0500
+
+    Contact form v1
+
+[33mcommit 8d7ea41db0704a3848653a9a684ba82f152ae20f[m
+Author: CESAR ANDRES ABADIA DAVILA <ceanabad@gmail.com>
+Date:   Sat Dec 4 12:06:00 2021 -0500
+
+    Feature: Button final position
+
+[33mcommit 4a93c0b7bf4ffd7be9ac60a77d997048e6d06045[m[33m ([m[1;31morigin/jaime[m[33m)[m
+Author: jaimevalenciap <33964088+jaimevalenciap@users.noreply.github.com>
+Date:   Fri Dec 3 23:22:32 2021 -0500
+
+    Add files via upload
+
+[33mcommit c75fb31b381966d9bd59b036cea66434c7f3d454[m
+Author: creator-krixus <wilsonrueda2@gmail.com>
+Date:   Fri Dec 3 21:21:45 2021 -0500
+
+    Change of Cesar
+
+[33mcommit f017d2c1858ae645c179b96d5e2f91702bb87a55[m
+Author: CESAR ANDRES ABADIA DAVILA <ceanabad@gmail.com>
+Date:   Fri Dec 3 13:55:22 2021 -0500
+
+    Feature:CustomerInversion component create
+
+[33mcommit fe3935785861563f79119b026ea8c4cc43c9d8c4[m
+Merge: 4d7e0b3 265016c
+Author: Wilson Rueda <69820208+creator-krixus@users.noreply.github.com>
+Date:   Thu Dec 2 22:28:09 2021 -0500
+
+    Merge pull request #16 from creator-krixus/develop
+    
+    Develop
+
+[33mcommit 265016c104de1ec9405798ca678abbb1334b601f[m
+Merge: f18764d 335dcc3
+Author: Wilson Rueda <69820208+creator-krixus@users.noreply.github.com>
+Date:   Thu Dec 2 22:25:42 2021 -0500
+
+    Merge pull request #15 from creator-krixus/wilson
+    
+    Wilson
+
+[33mcommit 335dcc3beb383e33db54f5fa71a5e5873ccf8805[m
+Merge: ebd9808 5c0930e
+Author: creator-krixus <wilsonrueda2@gmail.com>
+Date:   Thu Dec 2 22:23:54 2021 -0500
+
+    Merge branch 'wilson' of https://github.com/creator-krixus/inmobiliario into wilson
+
+[33mcommit ebd98088a04fa267802f4327fc4a5bcb4da21279[m
+Author: creator-krixus <wilsonrueda2@gmail.com>
+Date:   Thu Dec 2 22:21:21 2021 -0500
+
+    Feature: modified footer
+
+[33mcommit 544a9d5ed2a6e01e8f5339144f0d7b4f5e4d1f29[m
+Merge: 4d7e0b3 ce93438
+Author: creator-krixus <wilsonrueda2@gmail.com>
+Date:   Thu Dec 2 20:49:43 2021 -0500
+
+    Merge branch 'david' of https://github.com/creator-krixus/inmobiliario into wilson
+
+[33mcommit ce93438f94d48068891fd996d03129b8256a3d74[m
+Merge: 675e344 f18764d
+Author: David Charif <davidcharif@hotmail.com>
+Date:   Thu Dec 2 17:47:29 2021 -0500
+
+    fix merge
+
+[33mcommit 5c0930e96197de640e38d4a78b1ac7d254559871[m
+Merge: 87dd002 675e344
+Author: Wilson Rueda <69820208+creator-krixus@users.noreply.github.com>
+Date:   Wed Dec 1 20:06:26 2021 -0500
+
+    Merge pull request #14 from creator-krixus/david
+    
+    David
+
+[33mcommit 4d7e0b3940736b91ba615102069a9d73b20da70f[m
+Merge: 8c981af f18764d
+Author: Wilson Rueda <69820208+creator-krixus@users.noreply.github.com>
+Date:   Wed Dec 1 19:53:37 2021 -0500
+
+    Merge pull request #13 from creator-krixus/develop
+    
+    Change in about
+
+[33mcommit f18764d2

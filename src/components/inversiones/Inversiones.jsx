@@ -20,10 +20,10 @@ export default function Inversiones() {
          <div>
            <img src={cuarto} className="d-block w-100" width="304" height="570" alt="Casas" />
          </div>
-        <div className="separador"> <h1 className="titulo">Brexiu <br/> Una inversión con calidad de vida</h1></div>
+        <div className="separador"> <h1 className="titulo">Relieve <br/> Una inversión con calidad de vida</h1></div>
         <div >
             
-            <p className="PqSomos">Para  nuestros clientes que buscan tener a través de su inversión una alternativa que les brinde calidad de vida para ellos y toda su familia, Brexiu Experience satisface los requerimientos, así como oportunidades de crecimiento personal y profesional en el continente americano. El concepto de este proyecto, nace a partir de la necesidad de crear condiciones para  inmuebles con estándares de resort, que a la vez ofrezcan todas las comodidades y los lujos de una casa vacacional propia, sin preocuparse por una alta inversión, procesos de dotación, mantenimiento o administración de la propiedad.
+            <p className="PqSomos">Para  nuestros clientes que buscan tener a través de su inversión una alternativa que les brinde calidad de vida para ellos y toda su familia, Relieve Experience satisface los requerimientos, así como oportunidades de crecimiento personal y profesional en el continente americano. El concepto de este proyecto, nace a partir de la necesidad de crear condiciones para  inmuebles con estándares de resort, que a la vez ofrezcan todas las comodidades y los lujos de una casa vacacional propia, sin preocuparse por una alta inversión, procesos de dotación, mantenimiento o administración de la propiedad.
             <p ><br />
             A través de este modelo de negocio, nuestros inversionistas serán titulares de  1 de las 10 exclusivas fracciones de copropiedad sobre una de nuestras nuevas viviendas. Esto les dará la posibilidad de tener garantizadas las vacaciones o de obtener nuevos ingresos mediante la renta del inmueble, optimizando la diversificación de la inversión y generando oportunidades para adquirir nuevas y espectaculares experiencias.</p>
             </p>
@@ -38,7 +38,7 @@ export default function Inversiones() {
 				          Fauna y flora silvestre alrededor.
                   Ademas de colegios,<br/> tiendas y cercanía aPine Island Marina.
 				          </p> 
-                  <p className="PqSomos">Brexius ejecuta el desarrollo de proyectos inmobiliarios con <br/>inversión pública y/o privada, así como el desarrollode zonas <br/> especiales empresariales de servicios a nivel internacional
+                  <p className="PqSomos">Relieves ejecuta el desarrollo de proyectos inmobiliarios con <br/>inversión pública y/o privada, así como el desarrollode zonas <br/> especiales empresariales de servicios a nivel internacional
                 </p>
               </div>
         

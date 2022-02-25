@@ -44,7 +44,7 @@ export default function Footer() {
                       <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <h6 className="text-uppercase fw-bold mb-4">
                         <FontAwesomeIcon icon={faGem}/>
-                          <i className="fas fa-gem me-3"></i>Inmobiliaria
+                          <i className="fas fa-gem me-3"></i>Relieve
                         </h6>
                         <p>
                           Here you can use rows and columns to organize your footer content. Lorem ipsum
@@ -94,7 +94,7 @@ export default function Footer() {
                           Contacto
                         </h6>
                         <p><FontAwesomeIcon icon={faHome}/>
-                          Brexiu</p>
+                          Relieve</p>
                         <p>
                           <FontAwesomeIcon icon={faEnvelope}/>
                           info@example.com
@@ -109,7 +109,7 @@ export default function Footer() {
                   </div>
                 </section>
                 <div className="text-center p-4" >
-                  © {year} Copyright Grupo Brexiu
+                  © {year} Copyright Grupo Relieve
                 </div>
 
               </footer>
